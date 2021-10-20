@@ -3,6 +3,7 @@ import * as admin from 'firebase-admin';
 admin.initializeApp(functions.config().firebase)
 const db = admin.firestore();
 
+
  export const getModule = functions.https.onRequest((request, response) => {
    functions.logger.info("Hello logs!", {structuredData: true});
    response.send("Hello");
@@ -35,10 +36,15 @@ const db = admin.firestore();
  export const getCourse = functions.https.onRequest( async  (request, response) => {
 
     const courseId = request.body.courseId;
+    console.log('courseId', courseId);
+    
     
     try{
-        const course = await db.collection('courses').doc(courseId).get()
-        response.send(course.data());
+        const course = await db.collection('courses').doc(courseId.toString()).get()
+        const data = course.data()
+        console.log(data);
+        
+        response.send(data);
     }catch(e){
         console.log(e);
         
@@ -51,6 +57,10 @@ const db = admin.firestore();
    functions.logger.info("Hello logs!", {structuredData: true});
    response.send("Hello");
  }); 
+
+
+ /// PLAYGROUND DE FUNCIONES 
+
  
  
  

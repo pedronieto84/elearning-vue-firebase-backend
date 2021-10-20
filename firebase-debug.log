@@ -1,0 +1,16 @@
+[debug] [2021-10-20T14:49:38.625Z] ----------------------------------------------------------------------
+[debug] [2021-10-20T14:49:38.627Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\usuario\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions:getCourse
+[debug] [2021-10-20T14:49:38.627Z] CLI Version:   9.20.0
+[debug] [2021-10-20T14:49:38.627Z] Platform:      win32
+[debug] [2021-10-20T14:49:38.627Z] Node Version:  v14.17.3
+[debug] [2021-10-20T14:49:38.628Z] Time:          Wed Oct 20 2021 16:49:38 GMT+0200 (hora de verano de Europa central)
+[debug] [2021-10-20T14:49:38.628Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-20T14:49:38.676Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-20T14:49:38.676Z] > authorizing via signed-in user (pedro.nieto.sanchez@gmail.com)
+[debug] [2021-10-20T14:49:38.676Z] [iam] checking project elearning-vue-itacademy for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2021-10-20T14:49:38.678Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/elearning-vue-itacademy:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2021-10-20T14:49:39.401Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 20 Oct 2021 14:49:39 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=629","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-20T14:49:39.402Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/elearning-vue-itacademy/serviceAccounts/elearning-vue-itacademy@appspot.gserviceaccount.com:testIamPermissions  
+ {"permissions":["iam.serviceAccounts.actAs"]}
